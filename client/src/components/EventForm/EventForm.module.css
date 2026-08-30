@@ -1,0 +1,79 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+.input,
+.textarea,
+.select {
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text-h);
+  font-family: var(--sans);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-bg);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: var(--sans);
+}
+
+.submit {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    opacity 0.2s,
+    transform 0.1s;
+}
+
+.submit:hover {
+  opacity: 0.9;
+}
+
+.submit:active {
+  transform: scale(0.98);
+}
+
+.submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
