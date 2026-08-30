@@ -10,7 +10,7 @@ const initialFormValues = {
   location: '',
 };
 
-export default function EventForm({ onEventCreated }) {
+function EventForm({ onEventCreated }) {
   const [formValues, setFormValues] = useState(initialFormValues);
 
   function handleChange(event) {
@@ -122,3 +122,5 @@ export default function EventForm({ onEventCreated }) {
     </form>
   );
 }
+
+export default EventForm;

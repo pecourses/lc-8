@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import EventForm from '../components/EventForm';
-import EventsList from '../components/EventsList';
+import { useState } from 'react';
+import EventForm from '../../components/EventForm';
+import EventsList from '../../components/EventsList';
 
 function EventsPage() {
   const [events, setEvents] = useState([]);

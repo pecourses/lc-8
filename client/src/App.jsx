@@ -1,4 +1,4 @@
-import EventsPage from './pages/EventsPage.jsx';
+import EventsPage from './pages/EventsPage';
 
 function App() {
   return <EventsPage />;

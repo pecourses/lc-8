@@ -1,6 +1,6 @@
 import EventItem from './EventItem';
 
-export default function EventsList({ events }) {
+function EventsList({ events }) {
   if (!events.length) {
     return <p>No events found.</p>;
   }
@@ -13,3 +13,5 @@ export default function EventsList({ events }) {
     </ul>
   );
 }
+
+export default EventsList;

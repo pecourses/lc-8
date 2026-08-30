@@ -1,6 +1,6 @@
 import styles from './EventItem.module.css';
 
-export default function EventItem({ event }) {
+function EventItem({ event }) {
   const eventDate = new Date(event.date);
 
   return (
@@ -26,3 +26,5 @@ export default function EventItem({ event }) {
     </li>
   );
 }
+
+export default EventItem;
