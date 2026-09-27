@@ -6,4 +6,4 @@ const axiosOptions = {
 
 const apiInstance = axios.create(axiosOptions);
 
-export const createEvent = (body) => apiInstance.post('/events');
+export const createEvent = () => apiInstance.post('/events');
